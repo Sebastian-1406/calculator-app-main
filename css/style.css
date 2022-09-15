@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap');
+
+body{
+    font-family: 'League Spartan', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background ease 500ms;
+}
+
+.contenedor {
+    display: grid;
+    gap: 25px;
+}
+.contenedor-seccion-01 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contenedor-seccion_tema {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 20px;
+    text-transform: uppercase;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+}
+.contendor-seccion_tema-contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 65px;
+}
+.contenedor-seccion_tema-switch{
+    display: flex;
+    justify-content: space-around;
+}
+.contenedor-seccion_tema-control{
+    padding: 5px;
+    height: 15px;
+    border-radius: 100px;
+    position: relative;
+}
+.contenedor-seccion_tema-control .selector{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    cursor: pointer;
+}
+.selector-1 {
+    left: 5px;
+}
+.selector-2 {
+    right: 25px;
+}
+.selector-3 {
+    right: 5px;
+}
+.activo {
+    opacity: 1;
+}
+.disable {
+    opacity: 0;
+}
+
+.contenido {
+    padding: 20px;
+}
+.contenedor-seccion-02 {
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 3.2em;
+}
+
+.contenedor-seccion-03 {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(5, 60px);
+    gap: 15px;
+}
+
+.contenedor-seccion-03 button {
+    transition: background ease 500ms;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 2em;
+    font-weight: 700;
+    line-height: 0;
+    letter-spacing: 0px;
+}
+.contenedor-seccion-03 .font-normal {
+    font-size: 1.2em;
+}
+
+.contenedor-seccion-03 .resultado {
+    grid-column: 3 / 5;
+    grid-row: 5 / 6;
+}
+.contenedor-seccion-03 .reset {
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+}
+
+/*Tema 1*/
+
+.tema-01 {
+    background-color: hsl(222, 26%, 31%);
+    color: hsl(0, 0%, 100%);
+}
+.tema-01 .contenedor-seccion_tema-control {
+    background-color: hsl(223, 31%, 20%);
+}
+.tema-01 .contenedor-seccion-02{ 
+    background-color: hsl(224, 36%, 15%);
+}
+.tema-01 .contenedor-seccion-03 {
+    background-color: hsl(223, 31%, 20%);
+    border-radius: 10px;
+}
+.tema-01 .contenedor-seccion-03 button{
+    background-color: hsl(30, 25%, 89%);
+    box-shadow: 0 4px 0 hsl(28, 16%, 65%);
+    color: hsl(221, 14%, 31%)
+}
+.tema-01 .contenedor-seccion-03 .reset{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0 4px 0 hsl(224, 28%, 35%);
+    color: rgb(249, 244, 244);
+}
+.tema-01 .contenedor-seccion-03 .del{
+    background-color: hsl(225, 21%, 49%);
+    box-shadow: 0 4px 0 hsl(224, 28%, 35%);
+    color: rgb(249, 244, 244);
+}
+.tema-01 .contenedor-seccion-03 .resultado {
+    background-color: hsl(6, 63%, 50%);
+    box-shadow: 0 4px 0 hsl(6, 70%, 34%);
+    color: rgb(249, 244, 244);
+}
+
+.tema-01 .contenedor-seccion-03 button:hover {
+    background-color: hsl(30, 25%, 100%);
+}
+.tema-01 .contenedor-seccion-03 .reset:hover{
+    background-color: hsl(225, 21%, 70%);
+}
+.tema-01 .contenedor-seccion-03 .del:hover{
+    background-color: hsl(225, 21%, 70%);
+}
+.tema-01 .contenedor-seccion-03 .resultado:hover{
+    background-color: hsl(6, 93%, 70%);
+}
+
+/*Tema 2*/
+.tema-02 {
+    background-color: hsl(0, 0%, 90%);
+    color: hsl(60, 10%, 19%);
+}
+.tema-02 .contenedor-seccion_tema-control {
+    background-color: hsl(0, 5%, 81%);
+}
+.tema-02 .contenedor-seccion-02{ 
+    background-color: hsl(0, 0%, 100%)
+}
+.tema-02 .contenedor-seccion-03 {
+    background-color: hsl(0, 5%, 81%);
+    border-radius: 10px;
+}
+.tema-02 .contenedor-seccion-03 button{
+    background-color: hsl(45, 7%, 89%);
+    box-shadow: 0 4px 0 hsl(35, 11%, 61%);
+    color: hsl(60, 10%, 19%);
+}
+.tema-02 .contenedor-seccion-03 .reset{
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0 4px 0 hsl(185, 58%, 25%);
+    color: rgb(249, 244, 244);
+}
+.tema-02 .contenedor-seccion-03 .del{
+    background-color: hsl(185, 42%, 37%);
+    box-shadow: 0 4px 0 hsl(185, 58%, 25%);
+    color: rgb(249, 244, 244);
+}
+.tema-02 .contenedor-seccion-03 .resultado {
+    background-color: hsl(25, 98%, 40%);
+    box-shadow: 0 4px 0 hsl(25, 99%, 27%);
+    color: rgb(249, 244, 244);
+}
+
+
+.tema-02 .contenedor-seccion-03 button:hover{
+    background-color: hsl(45, 7%, 100%);
+
+}
+.tema-02 .contenedor-seccion-03 .reset:hover{
+    background-color: hsl(185, 42%, 60%);
+
+}
+.tema-02 .contenedor-seccion-03 .del:hover{
+    background-color: hsl(185, 42%, 60%);
+
+}
+.tema-02 .contenedor-seccion-03 .resultado:hover {
+    background-color: hsl(25, 98%, 60%);
+
+}
+/*Tema 3*/
+.tema-03 {
+    background-color: hsl(268, 75%, 9%);
+    color: hsl(52, 100%, 62%);
+
+}
+.tema-03 .contenedor-seccion_tema-control {
+    background-color: hsl(0, 5%, 81%);
+}
+.tema-03 .contenedor-seccion-02{ 
+    background-color: hsl(268, 71%, 12%)
+}
+.tema-03 .contenedor-seccion-03 {
+    background-color: hsl(268, 71%, 12%);
+    border-radius: 10px;
+}
+.tema-03 .contenedor-seccion-03 button{
+    background-color: hsl(268, 47%, 21%);
+    box-shadow: 0 4px 0 hsl(290, 70%, 36%);
+    color: hsl(52, 100%, 62%);
+}
+.tema-03 .contenedor-seccion-03 .reset{
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0 4px 0 hsl(285, 91%, 52%);
+    color: rgb(249, 244, 244);
+}
+.tema-03 .contenedor-seccion-03 .del{
+    background-color: hsl(281, 89%, 26%);
+    box-shadow: 0 4px 0 hsl(285, 91%, 52%);
+    color: rgb(249, 244, 244);
+}
+.tema-03 .contenedor-seccion-03 .resultado {
+    background-color: hsl(176, 100%, 44%);
+    box-shadow: 0 4px 0 hsl(177, 92%, 70%);
+    color: hsl(198, 20%, 13%);
+}
+
+.tema-03 .contenedor-seccion-03 button:hover{
+    background-color: hsl(268, 54%, 45%);
+}
+.tema-03 .contenedor-seccion-03 .reset:hover{
+    background-color: hsl(281, 89%, 80%);
+}
+.tema-03 .contenedor-seccion-03 .del:hover{
+    background-color: hsl(281, 89%, 80%);
+}
+.tema-03 .contenedor-seccion-03 .resultado:hover {
+    background-color: hsl(176, 100%, 70%);
+}
+
+
+@keyframes palpitar {
+    0% {
+        border: 2px solid hsl(6, 63%, 50%);
+        box-shadow: 0px 1px 5px #fff5;
+    }
+    50% {
+        border: 2px solid hsl(25, 98%, 40%);
+        box-shadow: 0px 4px 15px #fff6;
+    }
+    100% {
+        border: 2px solid hsl(281, 89%, 26%);
+        box-shadow: 0px 5px 10px #fff8;
+    }
+}
+
+.reset {
+    animation-duration: 3s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@media screen and (min-width:600px) {
+    body {
+        overflow-y: hidden;
+    }
+    .contenedor-seccion-01 h2{
+        font-size: 2em;
+    }
+    .contenido {
+        padding: 30px;
+    }
+    .contenedor-seccion-03{
+        grid-template-columns: repeat(4, 90px);
+        grid-template-rows: repeat(5, 60px);
+        gap: 20px;
+    }
+}
