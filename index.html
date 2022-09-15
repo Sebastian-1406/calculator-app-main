@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="tema-01">
+
+    <div class="contenedor contenido">
+        <div class="contenedor-seccion-01">
+            <h2>calc</h2>
+            <div class="contenedor-seccion_tema">
+                <span>Theme</span>
+                <div class="contendor-seccion_tema-contenedor">
+                    <div class="contenedor-seccion_tema-switch">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+                    <div class="contenedor-seccion_tema-control">
+                        <div class="selector selector-1 activo"></div>
+                        <div class="selector selector-2 disable"></div>
+                        <div class="selector selector-3 disable"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor-seccion-02 contenido">
+            <div class="pantalla-operacion"></div>
+            <div class="pantalla-total"></div>
+        </div>
+
+        <div class="contenedor-seccion-03 contenido">
+            <button value="7" disabled>7</button>
+            <button value="8">8</button>
+            <button value="9">9</button>
+            <button value="DEL" class="del font-normal">DEL</button>
+            <button value="4">4</button>
+            <button value="5">5</button>
+            <button value="6">6</button>
+            <button value="+">+</button>
+            <button value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+            <button value="-">-</button>
+            <button value=".">.</button>
+            <button value="0">0</button>
+            <button value="/">/</button>
+            <button value="x">x</button>
+            <button value="=" class="resultado font-normal">=</button>
+            <button value="RESET" class="reset font-normal">RESET</button>
+        </div>
+    </div> 
+
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
